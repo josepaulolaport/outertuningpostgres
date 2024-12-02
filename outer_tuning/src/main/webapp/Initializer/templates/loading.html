@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Configuring the system...</title>
+    <!-- Inclui CSS do Bootstrap e Font Awesome -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        body {
+            font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+            background-color: #f4f1ea;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+        #pre_header { 
+            display: none; /* Remove a listra superior */
+        }
+        #header {
+            background-color: #f4f1ea;
+            padding: 20px 0;
+        }
+        .logo {
+            text-align: left;
+        }
+        .logo img {
+            width: 250px;
+        }
+        #content {
+            padding: 40px 0;
+            text-align: center;
+        }
+        h1 {
+            font-size: 2.5em;
+            color: #333;
+            margin-bottom: 20px;
+        }
+        p {
+            font-size: 1.2em;
+            color: #666;
+            margin-bottom: 40px;
+        }
+        .loading-spinner {
+            display: inline-block;
+            width: 80px;
+            height: 80px;
+            border: 10px solid #f3f3f3;
+            border-top: 10px solid #3498db;
+            border-radius: 50%;
+            animation: spin 2s linear infinite;
+        }
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+        #base {
+            display: none; /* Remove a listra inferior */
+        }
+        #footer {
+            background-color: #f4f1ea;
+            padding: 20px 0;
+            color: #333;
+        }
+        #footer a {
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+    <div id="pre_header" class="visible-lg"></div>
+    <div id="header">
+        <div class="container">
+            <div class="row">
+                <!-- Logo -->
+                <div class="col-md-12 logo">
+                    <a href="/">
+                        <img src="./static/logo.png" alt="Logo" />
+                    </a>
+                </div>
+                <!-- End Logo -->
+            </div>
+        </div>
+    </div>
+    <!-- === END HEADER === -->
+
+    <!-- === BEGIN CONTENT === -->
+    <div id="content">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <h1>Configuring the system...</h1>
+                    <p>Please wait while the system is being configured. This may take a few minutes.</p>
+                    <div class="loading-spinner"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- === END CONTENT === -->
+
+    <!-- === BEGIN FOOTER === -->
+    <div id="base">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    &nbsp;
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="footer">
+        <div class="container">
+            <div class="row">
+                <div id="copyright" class="col-md-4">
+                    &nbsp;
+                </div>
+                <div id="footermenu" class="col-md-8">
+                    <ul class="list-unstyled list-inline pull-right">
+                        <li>
+                            <a href="http://www.biobd.inf.puc-rio.br">&copy; 2024 BioBD - PUC-Rio</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- === END FOOTER === -->
+
+    <script>
+        // Simula o tempo de carregamento e redireciona
+        setTimeout(function(){
+            window.location.href = "/configure";
+        }, 3000); // Ajuste o tempo conforme necessário (3 segundos aqui)
+    </script>
+
+    <!-- Include Bootstrap and jQuery scripts -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</body>
+</html>
